@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
-# require File.expand_path('../lib/version', __FILE__)
-$:.unshift File.expand_path("../lib", __FILE__)
-require "email_spec/version"
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'email_spec/version'
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Ben Mabey"]
