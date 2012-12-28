@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/version', __FILE__)
+# require File.expand_path('../lib/version', __FILE__)
+$:.unshift File.expand_path("../lib", __FILE__)
+require "email_spec/version"
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Ben Mabey"]
@@ -13,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "email_spec"
   gem.require_paths = ["lib"]
-  gem.version       = VERSION
+  gem.version       = EmailSpec::VERSION
 
   # specify any dependencies here; for example:
   gem.add_development_dependency 'minitest'
