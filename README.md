@@ -2,17 +2,12 @@
 
 A collection of RSpec matchers and Cucumber steps to make testing emails go smoothly.
 
-
-== Setup
-
-  script/plugin install git://github.com/bmabey/email-spec.git
-
 === Gem Setup
   
-  gem install bmabey-email_spec
-
   # config/environments/test.rb
-  config.gem 'bmabey-email_spec', :lib => 'email_spec'
+  gem 'email_spec', :git => 'git://github.com/conradwt/email_spec.git'
+  
+  Note:  This will be published as traditional gem in the near future.
   
 === Cucumber
 
