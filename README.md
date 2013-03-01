@@ -5,6 +5,7 @@ A collection of RSpec matchers and Cucumber steps to make testing emails go smoo
 === Gem Setup
   
   # config/environments/test.rb
+  
   gem 'email_spec', :git => 'git://github.com/conradwt/email_spec.git'
   
   Note:  This will be published as traditional gem in the near future.
